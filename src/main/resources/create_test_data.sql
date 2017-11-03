@@ -1,0 +1,1 @@
+INSERT INTO orders (order_date, expected_delivery_date) VALUES ("10/08/2017", "10/09/2017")

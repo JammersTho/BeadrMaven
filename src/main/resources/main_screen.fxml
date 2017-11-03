@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainScreen">
+   <children>
+      <BorderPane layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox alignment="TOP_RIGHT" prefHeight="400.0" prefWidth="170.0" spacing="5.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Add a Customer" />
+                  <Button mnemonicParsing="false" prefWidth="150.0" text="Edit Customer" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Add Order to Customer" />
+                  <Button mnemonicParsing="false" prefWidth="150.0" text="Product Maintenance" />
+                  <Button mnemonicParsing="false" prefWidth="150.0" text="Bundle Maintenance" />
+                  <Button mnemonicParsing="false" prefWidth="150.0" text="Fixing Maintenance" />
+                  <Button fx:id="createTable" mnemonicParsing="false" prefWidth="150.0" text="REBUILD DB" />
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </VBox>
+         </left>
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Beadr">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+         </top>
+         <right>
+            <VBox prefHeight="200.0" prefWidth="170.0" spacing="5.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Order Status" />
+                  <TextField minWidth="150.0" prefHeight="25.0" prefWidth="150.0" promptText="Paid or nah" />
+                  <Button mnemonicParsing="false" prefWidth="150.0" text="Log a Payment" />
+                  <Button mnemonicParsing="false" prefWidth="150.0" text="View Delivery Note" />
+                  <Button mnemonicParsing="false" prefWidth="150.0" text="View Order Confirmation" />
+                  <Button mnemonicParsing="false" prefWidth="150.0" text="View Proforma Invoice" />
+                  <Button mnemonicParsing="false" prefWidth="150.0" text="View New Customer Letter" />
+               </children>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </VBox>
+         </right>
+         <center>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="395.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Customers" />
+                        <ListView fx:id="customerList" prefHeight="350.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Orders" />
+                        <ListView fx:id="orderList" prefHeight="350.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
